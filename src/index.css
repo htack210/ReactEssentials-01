@@ -67,6 +67,13 @@ main h2 {
   color: #a18aba;
 }
 
+p.myParagraph {
+   color: #a18aba;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
 #core-concepts ul {
   list-style: none;
   padding: 0;
