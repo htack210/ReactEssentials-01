@@ -29,3 +29,5 @@ export const CORE_CONCEPTS = [
       "React-managed data which, when changed, causes the component to re-render & the UI to update.",
   },
 ];
+
+export default CORE_CONCEPTS;

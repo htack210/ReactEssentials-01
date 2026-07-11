@@ -1,7 +1,7 @@
-import { Header } from "./header"
+import Header from "./header"
 import MainGoal from "./mainGoal";
-import { CoreConcept } from "./coreConcept"
-import { CORE_CONCEPTS } from "./data";
+import CoreConcept from "./coreConcept"
+import CORE_CONCEPTS from "./data";
 
 function App() {
   return (
