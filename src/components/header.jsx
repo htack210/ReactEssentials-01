@@ -4,6 +4,7 @@ import components from '/src/assets/components.png';
 import jsxui from '/src/assets/jsx-ui.png';
 import statemgmt from '/src/assets/state-mgmt.png';
 import config from '/src/assets/config.png';
+import "./header.css";
 
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core', 'Boss', 'Killer', 'Key'];
 
