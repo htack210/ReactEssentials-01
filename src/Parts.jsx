@@ -1,4 +1,8 @@
 import logo from './assets/react-core-concepts.png';
+import components from './assets/components.png';
+import jsxui from './assets/jsx-ui.png';
+import statemgmt from './assets/state-mgmt.png';
+import config from './assets/config.png';
 
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core', 'Boss', 'Killer', 'Key'];
 
@@ -29,6 +33,14 @@ export function MainGoal() {
             <p className="myParagraph">My main goal: Learn React in-depth and from the ground up.</p>
         </div>
     )
+}
+
+export function CoreConcept() {
+    return <li>
+        title="Components"
+        description="The core UI buidling block"
+        image=<img src={components} alt="components img" />
+    </li>
 }
 
 export default Header;
