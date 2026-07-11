@@ -5,9 +5,14 @@ import CORE_CONCEPTS from "./data";
 import TabButton from "./components/TabButton";
 
 function App() {
+  function handleSelect() {
+    console.log("Button selected!");
+  }
+
   return (
     <div>
       <Header />
+      <MainGoal />
       <main>
         <section id="core-concepts">
           <h2>Core Concepts</h2>
@@ -27,14 +32,14 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton>Components</TabButton>
-            <TabButton>JSX</TabButton>
-            <TabButton>Props</TabButton>
-            <TabButton>State</TabButton>
+            <TabButton onSelect={handleSelect}>Components</TabButton>
+            <TabButton onSelect={handleSelect}>JSX</TabButton>
+            <TabButton onSelect={handleSelect}>Props</TabButton>
+            <TabButton onSelect={handleSelect}>State</TabButton>
           </menu>
+          Dynamic content
         </section>
       </main>
-      <MainGoal />
     </div>
   );
 }
