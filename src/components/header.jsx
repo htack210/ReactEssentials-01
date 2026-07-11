@@ -1,8 +1,9 @@
-import logo from './assets/react-core-concepts.png';
-import components from './assets/components.png';
-import jsxui from './assets/jsx-ui.png';
-import statemgmt from './assets/state-mgmt.png';
-import config from './assets/config.png';
+// src\assets\react-core-concepts.png
+import logo from '/src/assets/react-core-concepts.png';
+import components from '/src/assets/components.png';
+import jsxui from '/src/assets/jsx-ui.png';
+import statemgmt from '/src/assets/state-mgmt.png';
+import config from '/src/assets/config.png';
 
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core', 'Boss', 'Killer', 'Key'];
 
