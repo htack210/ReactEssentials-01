@@ -1,4 +1,3 @@
-// src\assets\components.png
 import componentsImg from "/src/assets/components.png";
 import propsImg from "/src/assets/config.png";
 import jsxImg from "/src/assets/jsx-ui.png";
