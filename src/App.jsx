@@ -1,4 +1,4 @@
-import { useState, Fragment } from 'react';
+import { useState } from 'react';
 
 import Header from "./components/header"
 import MainGoal from "./components/mainGoal";
