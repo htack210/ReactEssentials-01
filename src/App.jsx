@@ -5,6 +5,7 @@ import MainGoal from "./components/mainGoal";
 import CoreConcept from "./components/coreConcept"
 import { CORE_CONCEPTS, EXAMPLES } from "./data";
 import TabButton from "./components/TabButton";
+import Section from "./components/Section"
 
 function App() {
   const [selectedTopic, setSelectedTopic] = useState();
@@ -18,16 +19,14 @@ function App() {
       <Header />
       <MainGoal />
       <main>
-        <section id="core-concepts">
-          <h2>Core Concepts</h2>
+        <Section id="core-concepts" title="Core Concepts">
           <ul>
           {CORE_CONCEPTS.map((concept) => (
             <CoreConcept key={concept.title} {...concept} />
           ))}
           </ul>
-        </section>
-        <section id="examples">
-          <h2>Examples</h2>
+        </Section>
+        <Section id="examples" title="Examples">
           <menu>
             {Object.keys(EXAMPLES).map((topic) => (
               <TabButton key={topic} isSelected={selectedTopic === topic} onSelect={() => handleSelect(topic)}>
@@ -46,7 +45,7 @@ function App() {
             </pre>
           </div>)
           }
-        </section>
+        </Section>
       </main>
     </>
   );
