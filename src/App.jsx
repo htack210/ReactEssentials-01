@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, Fragment } from 'react';
 
 import Header from "./components/header"
 import MainGoal from "./components/mainGoal";
@@ -14,7 +14,7 @@ function App() {
   }
 
   return (
-    <div>
+    <>
       <Header />
       <MainGoal />
       <main>
@@ -48,7 +48,7 @@ function App() {
           }
         </section>
       </main>
-    </div>
+    </>
   );
 }
 
