@@ -5,6 +5,7 @@ import MainGoal from "./components/mainGoal";
 import CoreConcept from "./components/coreConcept"
 import { CORE_CONCEPTS, EXAMPLES } from "./data";
 import TabButton from "./components/TabButton";
+import Tabs from './components/Tabs';
 import Section from "./components/Section"
 
 function App() {
@@ -27,13 +28,20 @@ function App() {
           </ul>
         </Section>
         <Section id="examples" title="Examples">
-          <menu>
+          <Tabs buttons={<>{Object.keys(EXAMPLES).map((topic) => (
+              <TabButton key={topic} isSelected={selectedTopic === topic} onSelect={() => handleSelect(topic)}>
+                {topic.charAt(0).toUpperCase() + topic.slice(1)}
+              </TabButton>
+            ))}</>}>
+             
+          </Tabs>
+          {/* <menu>
             {Object.keys(EXAMPLES).map((topic) => (
               <TabButton key={topic} isSelected={selectedTopic === topic} onSelect={() => handleSelect(topic)}>
                 {topic.charAt(0).toUpperCase() + topic.slice(1)}
               </TabButton>
             ))}
-          </menu>
+          </menu> */}
           {!selectedTopic && <h3>Please select a topic...</h3>}
           {selectedTopic && (<div id="tab-content">
             <h3>{EXAMPLES[selectedTopic].title}</h3>
